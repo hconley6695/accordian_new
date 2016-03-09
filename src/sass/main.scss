@@ -4,10 +4,10 @@ body {
 	font-family: sans-serif;
 }
 .app {
-	transition: all 2s;
+	transition: 2s;
 	width: 600px;
-	height:600px;
-	border: 2px solid blue;
+	position: absolute;
+	top: 0;
 }
 h2 {
 	color: white;
@@ -15,31 +15,36 @@ h2 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-top: 0;
+	margin-bottom: 0;
 
 }
 
 .box {
-
-	border: 2px solid blue;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: 2px solid #00c6d6;
 } 
 
+.box1 {
+	height: 100px;
+	transition: height 2s;
+	transition: opacity 0s;
+}
+
 .box2 {
-//	height: 100px;
-transition: height 2s;
+	height: 150px;
+	transition: height 2s;
 	transition: opacity 0s;
 }
 
 .box3 {
+	height: 300px;
 	transition: height 2s;
 	transition: opacity 0s;
-	// transition: opacity 5s;
+	top: calc(100%-300px);
+
 }
 
-.box1 {
-//	height: 100px;
-transition: height 2s;
-	transition: opacity 0s;
-}
 
 .moveup {
 height: 0;
